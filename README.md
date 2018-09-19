@@ -22,11 +22,11 @@ git clone https://github.com/firedot/packer_aws_nginx.git
 cd packer_aws_nginx
 ````
 
-**Edit the following lines:**
+**Create environment variables for SSH keys**
 
 ````
-"ssh_private_key_file": "<absolute_path_to_private_key_file>"
-"ssh_keypair_name": "<your_keypair_name>"
+export PACKER_SSH_PRIVATE_KEY_PATH="<path_to_your_private_key>"
+export PACKER_KEYPAIRNAME="<keypair_name_used_in_AWS>"
 ````
 
 
