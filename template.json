@@ -14,7 +14,6 @@
   "provisioners": [
      {
      "type": "shell",
-     "execute_command": "echo 'packer' | sudo -S bash -c '{{ .Vars }} {{ .Path }}'",
      "script": "./scripts/provision.sh"
      }
   ]
