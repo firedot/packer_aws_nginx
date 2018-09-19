@@ -22,7 +22,7 @@ aws_secret_access_key= <your_secret_access_key>
 ````
 git clone https://github.com/firedot/packer_aws_nginx.git
 
-cd packer_aws
+cd packer_aws_nginx
 ````
 
 **Edit the following lines:**
