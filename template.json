@@ -1,0 +1,21 @@
+{
+  "builders": [
+     {
+        "type": "amazon-ebs",
+        "region": "us-east-2",
+        "source_ami": "ami-0552e3455b9bc8d50",
+        "instance_type": "t2.micro",
+        "ssh_username": "ubuntu",
+        "ssh_private_key_file": "/Users/alext/.ssh/id_rsa",
+        "ssh_keypair_name": "mac",
+        "ami_name": "packer-aws-qstart {{timestamp}}"
+     }
+  ],
+  "provisioners": [
+     {
+     "type": "shell",
+     "execute_command": "echo 'packer' | sudo -S bash -c '{{ .Vars }} {{ .Path }}'",
+     "script": "./scripts/provision.sh"
+     }
+  ]
+}
