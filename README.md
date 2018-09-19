@@ -10,12 +10,9 @@ Find more information [here](https://www.packer.io/)
 
 ### AWS Credentials
 
-The default location is $HOME/.aws/credentials on Linux and OS X, or "%USERPROFILE%.aws\credentials" for Windows users.
-Enter your AWS credentials there in the following format: 
 ```` 
-[default]
-aws_access_key_id= <your_access_key_id>
-aws_secret_access_key= <your_secret_access_key>
+export AWS_ACCESS_KEY_ID=<Your_access_key_ID>
+export AWS_SECRET_ACCESS_KEY=<Your_Secret_access_key>
 ````
 
 ### Clone this repository and go to the cloned repo dir
@@ -29,7 +26,7 @@ cd packer_aws_nginx
 
 ````
 "ssh_private_key_file": "<absolute_path_to_private_key_file>"
-"ssh_keypair_name": "<your_keypair_name"
+"ssh_keypair_name": "<your_keypair_name>"
 ````
 
 
