@@ -8,7 +8,7 @@ Template for creating an AWS Image with Packer
 **Packer** 
 Find more information [here](https://www.packer.io/) 
 
-## AWS Credentials
+### AWS Credentials
 
 The default location is $HOME/.aws/credentials on Linux and OS X, or "%USERPROFILE%.aws\credentials" for Windows users.
 Enter your AWS credentials there in the following format: 
@@ -18,10 +18,10 @@ aws_access_key_id= <your_access_key_id>
 aws_secret_access_key= <your_secret_access_key>
 ````
 
-## Clone this repository and go to the cloned repo dir
+### Clone this repository and go to the cloned repo dir
+
 ````
 git clone https://github.com/firedot/packer_aws_nginx.git
-
 cd packer_aws_nginx
 ````
 
@@ -39,12 +39,12 @@ cd packer_aws_nginx
 packer build template.json
 ````
 
-## This will build an AMI based on an image with the following ID: 
+### This will build an AMI based on an image with the following ID: 
 
+```
 0552e3455b9bc8d50 
-
 Ubuntu 16.04.5 LTS
+```
 
 
-
-## And will have nginx installed
+### And will have nginx installed
