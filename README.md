@@ -26,7 +26,7 @@ cd packer_aws_nginx
 
 ````
 "ssh_private_key_file": "<absolute_path_to_private_key_file>"
-"ssh_keypair_name": "<your_keypair_name"
+"ssh_keypair_name": "<your_keypair_name>"
 ````
 
 
